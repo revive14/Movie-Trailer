@@ -1,13 +1,13 @@
-from media import Movie
-import webbrowser, time
+from media import Movie  #importing Movie class from media.py file
 import fresh_tomatoes
+
+
+#creating Movie class instances
 
 toy_story = Movie("Toy Story",
 "Kids toys come alive",
 "http://a.dilcdn.com/bl/wp-content/uploads/sites/8/2013/02/toy_story_wallpaper_by_artifypics-d5gss19.jpg",
 "https://www.youtube.com/watch?v=KYz2wyBy3kc")
-
-
 
 jolly_llb = Movie("Jolly LLB",
 "A lawyer from a small town in India moves to Delhi and tries to make a splash by reopening a high-profile case.",
@@ -34,6 +34,8 @@ before_i_fall = Movie("Before I Fall",
 "https://images-na.ssl-images-amazon.com/images/M/MV5BNDYwOTY0MDI2OV5BMl5BanBnXkFtZTgwOTE5NzM2MDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
 "https://www.youtube.com/watch?v=q3Zyy4ZXegE")
 
+#saving the movie instances in a list
 movies = [jolly_llb,the_mummy,pirates,cars,before_i_fall,toy_story]
 
+#the following function accept list as argument
 fresh_tomatoes.open_movies_page(movies)
